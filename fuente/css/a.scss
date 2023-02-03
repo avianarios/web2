@@ -1,0 +1,11 @@
+$color-fondo: #a3b3de;
+$color: #f00;
+
+
+body{
+    background-color: $color-fondo;
+
+    & .parrafo{
+        color:$color;
+    }
+}

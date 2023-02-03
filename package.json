@@ -1,0 +1,36 @@
+{
+  "name": "web2",
+  "version": "1.0.0",
+  "description": "",
+  "browserlist": "> 0.2%, not dead, last 4 versions",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel:desarrollo": "parcel fuente/index.html",
+    "parcel:produccion": "parcel build fuente/index.html",
+    "limpieza": "rimraf dist",
+    "desarrollo": "npm-run-all limpieza parcel:desarrollo",
+    "produccion": "npm-run-all limpieza parcel:produccion"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avianarios/web2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avianarios/web2/issues"
+  },
+  "homepage": "https://github.com/avianarios/web2#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.1.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "sass": "^1.58.0"
+  }
+}
